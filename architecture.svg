@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 260" width="100%" height="100%">
+  <defs>
+    <!-- Arrow Marker -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#475569"/>
+    </marker>
+
+    <!-- Clean Light Drop Shadow -->
+    <filter id="shadow" x="-5%" y="-10%" width="112%" height="125%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#64748b" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <style>
+    .bg { fill: #ffffff; }
+    .box { stroke-width: 1.8; rx: 6; filter: url(#shadow); }
+    .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 15px; font-weight: 700; text-anchor: middle; dominant-baseline: central; }
+    .subtitle { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 500; text-anchor: middle; dominant-baseline: central; }
+    .line { fill: none; stroke: #475569; stroke-width: 2.0; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrow); }
+  </style>
+
+  <!-- Pure White Background -->
+  <rect width="1280" height="260" class="bg"/>
+
+  <!-- ==================== CONNECTING PATHS ==================== -->
+  <!-- Inbound Email -> Normalizer (top branch) -->
+  <path d="M 180 130 H 205 Q 215 130 215 115 V 70 Q 215 55 225 55 H 238" class="line"/>
+
+  <!-- Inbound Email -> Security Rules (bottom branch) -->
+  <path d="M 180 130 H 205 Q 215 130 215 145 V 190 Q 215 205 225 205 H 438" class="line"/>
+
+  <!-- Normalizer -> Dual ML Classifier -->
+  <path d="M 400 55 H 438" class="line"/>
+
+  <!-- Dual ML Classifier -> Evidence Container -->
+  <path d="M 610 55 H 625 Q 635 55 635 70 V 115 Q 635 130 645 130 H 658" class="line"/>
+
+  <!-- Security Rules -> Evidence Container -->
+  <path d="M 610 205 H 625 Q 635 205 635 190 V 145 Q 635 130 645 130 H 658" class="line"/>
+
+  <!-- Evidence Container -> AI Explainer & Auditor -->
+  <path d="M 830 130 H 868" class="line"/>
+
+  <!-- AI Explainer & Auditor -> User Dashboard -->
+  <path d="M 1050 130 H 1088" class="line"/>
+
+  <!-- ==================== BOXES & CONTENT ==================== -->
+
+  <!-- 1. Inbound Email -->
+  <g transform="translate(30, 95)">
+    <rect width="150" height="70" class="box" fill="#fffbeb" stroke="#d97706"/>
+    <text x="75" y="35" class="title" fill="#92400e">
+      <tspan>✉️ Inbound Email</tspan>
+    </text>
+  </g>
+
+  <!-- 2. Text Normalizer -->
+  <g transform="translate(240, 20)">
+    <rect width="160" height="70" class="box" fill="#eff6ff" stroke="#2563eb"/>
+    <text x="80" y="27" class="title" fill="#1e40af">
+      <tspan>🛡️ 1. Text</tspan>
+    </text>
+    <text x="80" y="47" class="subtitle" fill="#1d4ed8">Normalizer</text>
+  </g>
+
+  <!-- 3. Dual ML Classifier -->
+  <g transform="translate(440, 20)">
+    <rect width="170" height="70" class="box" fill="#f0fdf4" stroke="#16a34a"/>
+    <text x="85" y="27" class="title" fill="#166534">
+      <tspan>⚡ 2. Dual ML</tspan>
+    </text>
+    <text x="85" y="47" class="subtitle" fill="#15803d">Classifier</text>
+  </g>
+
+  <!-- 4. Security Rules Engine -->
+  <g transform="translate(440, 170)">
+    <rect width="170" height="70" class="box" fill="#eef2ff" stroke="#4f46e5"/>
+    <text x="85" y="27" class="title" fill="#3730a3">
+      <tspan>🔍 3. Security</tspan>
+    </text>
+    <text x="85" y="47" class="subtitle" fill="#4338ca">Rules Engine</text>
+  </g>
+
+  <!-- 5. Evidence Container -->
+  <g transform="translate(660, 90)">
+    <rect width="170" height="80" class="box" fill="#fefce8" stroke="#ca8a04"/>
+    <text x="85" y="30" class="title" fill="#854d0e">
+      <tspan>📦 Evidence</tspan>
+    </text>
+    <text x="85" y="52" class="subtitle" fill="#a16207">Container</text>
+  </g>
+
+  <!-- 6. AI Explainer & Auditor -->
+  <g transform="translate(870, 80)">
+    <rect width="180" height="100" class="box" fill="#faf5ff" stroke="#9333ea"/>
+    <text x="90" y="38" class="title" fill="#6b21a8">
+      <tspan>🤖 4. AI Explainer</tspan>
+    </text>
+    <text x="90" y="62" class="subtitle" fill="#7e22ce">&amp; Auditor</text>
+  </g>
+
+  <!-- 7. User Dashboard -->
+  <g transform="translate(1090, 95)">
+    <rect width="160" height="70" class="box" fill="#f0fdfa" stroke="#0d9488"/>
+    <text x="80" y="27" class="title" fill="#115e59">
+      <tspan>💻 5. User</tspan>
+    </text>
+    <text x="80" y="47" class="subtitle" fill="#0f766e">Dashboard</text>
+  </g>
+</svg>

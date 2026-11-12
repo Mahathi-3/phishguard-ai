@@ -1,0 +1,32 @@
+# Data
+backend/data/*.csv
+backend/data/*.tsv
+
+# Model artifacts
+backend/models/*.joblib
+backend/models/*.pkl
+
+# Results (generated)
+backend/results/*.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# Node
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# Secrets
+.env
+*.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp

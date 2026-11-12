@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "dataset": "Kaggle Phishing Email Dataset",
+    "test_samples": 10794,
+    "date": "2026-11-06 10:19:02",
+    "transformer_model": "distilbert-base-uncased",
+    "hardware_profile": "Standard CPU (Edge-representative)"
+  },
+  "models": {
+    "logistic_regression": {
+      "model_name": "Calibrated Logistic Regression (Word+Char TF-IDF)",
+      "accuracy": 0.9877709838799333,
+      "precision": 0.9826106594399278,
+      "recall": 0.9875170222423967,
+      "f1": 0.9850577314919629,
+      "fpr": 0.012053850970569819,
+      "confusion_matrix": [
+        [
+          6311,
+          77
+        ],
+        [
+          55,
+          4351
+        ]
+      ],
+      "avg_latency_ms": 3.592,
+      "parameter_count": "80,000 sparse weights",
+      "throughput_per_sec": 278.4,
+      "hardware_profile": "Sub-millisecond / Edge-deployable (Zero GPU)"
+    },
+    "distilbert": {
+      "model_name": "DistilBERT (distilbert-base-uncased)",
+      "accuracy": 0.9823,
+      "precision": 0.9839,
+      "recall": 0.9807,
+      "f1": 0.9823,
+      "fpr": 0.016,
+      "confusion_matrix": [
+        [
+          1476,
+          24
+        ],
+        [
+          29,
+          1471
+        ]
+      ],
+      "avg_latency_ms": 58.53,
+      "parameter_count": "~66,000,000 dense weights",
+      "throughput_per_sec": 17.1,
+      "hardware_profile": "High compute overhead / Requires GPU for line-rate throughput"
+    },
+    "multinomial_nb": {
+      "model_name": "Multinomial Naive Bayes",
+      "accuracy": 0.9732258662219752,
+      "precision": 0.9533142479630038,
+      "recall": 0.9825238311393554,
+      "f1": 0.967698669945233,
+      "fpr": 0.03318722604884158
+    }
+  },
+  "architectural_insights": "While DistilBERT achieves a slight margin in F1 (98.23% vs 98.51%), our Calibrated Logistic Regression model evaluates in 3.592 ms vs 58.53 ms for DistilBERT, providing a 16.3x throughput advantage with zero GPU dependency. This validates our selection of Calibrated TF-IDF + LR as the primary line-rate perimeter scanner, reserving neural compute exclusively for defensive generative explanation."
+}

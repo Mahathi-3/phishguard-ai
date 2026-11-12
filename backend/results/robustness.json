@@ -1,0 +1,244 @@
+{
+  "original": {
+    "accuracy": 0.994,
+    "f1": 0.9925187032418953,
+    "precision": 0.995,
+    "recall": 0.9900497512437811,
+    "fpr": 0.0033444816053511705
+  },
+  "transformations": {
+    "char_substitution": {
+      "no_defense": {
+        "accuracy": 0.988,
+        "f1": 0.985,
+        "precision": 0.9899497487437185,
+        "recall": 0.9800995024875622,
+        "fpr": 0.006688963210702341
+      },
+      "with_defense": {
+        "accuracy": 0.988,
+        "f1": 0.985,
+        "precision": 0.9899497487437185,
+        "recall": 0.9800995024875622,
+        "fpr": 0.006688963210702341
+      },
+      "delta_f1_no_defense": -0.0075,
+      "delta_f1_with_defense": -0.0075,
+      "delta_fpr_no_defense": 0.0033,
+      "delta_fpr_with_defense": 0.0033,
+      "flipped_predictions": 5,
+      "flipped_after_defense": 5,
+      "examples": [
+        {
+          "original": "empty",
+          "perturbed": "3mpty",
+          "original_pred": 1,
+          "perturbed_pred": 0
+        },
+        {
+          "original": "empty",
+          "perturbed": "3mpty",
+          "original_pred": 1,
+          "perturbed_pred": 0
+        },
+        {
+          "original": "valium delivered to your home enter here to see our selection thanks , but no .",
+          "perturbed": "val1um deliver3d to your h0m3 3nt3r h3re to s33 0ur selection thank$ , but n0 .",
+          "original_pred": 1,
+          "perturbed_pred": 0
+        }
+      ]
+    },
+    "inserted_spaces": {
+      "no_defense": {
+        "accuracy": 0.99,
+        "f1": 0.9875930521091811,
+        "precision": 0.9851485148514851,
+        "recall": 0.9900497512437811,
+        "fpr": 0.010033444816053512
+      },
+      "with_defense": {
+        "accuracy": 0.99,
+        "f1": 0.9875930521091811,
+        "precision": 0.9851485148514851,
+        "recall": 0.9900497512437811,
+        "fpr": 0.010033444816053512
+      },
+      "delta_f1_no_defense": -0.0049,
+      "delta_f1_with_defense": -0.0049,
+      "delta_fpr_no_defense": 0.0067,
+      "delta_fpr_with_defense": 0.0067,
+      "flipped_predictions": 4,
+      "flipped_after_defense": 4,
+      "examples": [
+        {
+          "original": "empty",
+          "perturbed": "empt y",
+          "original_pred": 1,
+          "perturbed_pred": 0
+        },
+        {
+          "original": "re : billing question thank you for your message . the credit card i want to use is currently stored in your system . when i want to update the billing information with this card number , i am getting",
+          "perturbed": "re : b illing question thank you for your me ssage . the cred it card i want to use is currently stored in your system . when i want to update the billing information with this card num ber , i am get",
+          "original_pred": 0,
+          "perturbed_pred": 1
+        },
+        {
+          "original": "q : new email address for pier marco bertinetto content - length : 83 since the old address no longer works , would anybody know the new one ? alexis mr",
+          "perturbed": "q : new ema il address for pier marco bert inetto con tent - length : 83 sin ce the old ad dress no longer works , would anybody know the new one ? alex is mr",
+          "original_pred": 0,
+          "perturbed_pred": 1
+        }
+      ]
+    },
+    "unicode_lookalikes": {
+      "no_defense": {
+        "accuracy": 0.99,
+        "f1": 0.9874686716791979,
+        "precision": 0.9949494949494949,
+        "recall": 0.9800995024875622,
+        "fpr": 0.0033444816053511705
+      },
+      "with_defense": {
+        "accuracy": 0.994,
+        "f1": 0.9925187032418953,
+        "precision": 0.995,
+        "recall": 0.9900497512437811,
+        "fpr": 0.0033444816053511705
+      },
+      "delta_f1_no_defense": -0.0051,
+      "delta_f1_with_defense": 0.0,
+      "delta_fpr_no_defense": 0.0,
+      "delta_fpr_with_defense": 0.0,
+      "flipped_predictions": 4,
+      "flipped_after_defense": 0,
+      "examples": [
+        {
+          "original": "empty",
+          "perturbed": "em\u0440ty",
+          "original_pred": 1,
+          "perturbed_pred": 0
+        },
+        {
+          "original": "empty",
+          "perturbed": "em\u0440ty",
+          "original_pred": 1,
+          "perturbed_pred": 0
+        },
+        {
+          "original": "valium delivered to your home enter here to see our selection thanks , but no .",
+          "perturbed": "valium delivered to y\u043eur home \u0435nt\u0435r h\u0435re t\u043e se\u0435 \u043eur selection thanks , but n\u043e .",
+          "original_pred": 1,
+          "perturbed_pred": 0
+        }
+      ]
+    },
+    "url_obfuscation": {
+      "no_defense": {
+        "accuracy": 0.994,
+        "f1": 0.9925187032418953,
+        "precision": 0.995,
+        "recall": 0.9900497512437811,
+        "fpr": 0.0033444816053511705
+      },
+      "with_defense": {
+        "accuracy": 0.994,
+        "f1": 0.9925187032418953,
+        "precision": 0.995,
+        "recall": 0.9900497512437811,
+        "fpr": 0.0033444816053511705
+      },
+      "delta_f1_no_defense": 0.0,
+      "delta_f1_with_defense": 0.0,
+      "delta_fpr_no_defense": 0.0,
+      "delta_fpr_with_defense": 0.0,
+      "flipped_predictions": 0,
+      "flipped_after_defense": 0,
+      "examples": []
+    },
+    "brand_in_domain": {
+      "no_defense": {
+        "accuracy": 0.966,
+        "f1": 0.9594272076372315,
+        "precision": 0.9220183486238532,
+        "recall": 1.0,
+        "fpr": 0.056856187290969896
+      },
+      "with_defense": {
+        "accuracy": 0.966,
+        "f1": 0.9594272076372315,
+        "precision": 0.9220183486238532,
+        "recall": 1.0,
+        "fpr": 0.056856187290969896
+      },
+      "delta_f1_no_defense": -0.0331,
+      "delta_f1_with_defense": -0.0331,
+      "delta_fpr_no_defense": 0.0535,
+      "delta_fpr_with_defense": 0.0535,
+      "flipped_predictions": 18,
+      "flipped_after_defense": 18,
+      "examples": [
+        {
+          "original": "Do you like shaking your booty on the dance floor?",
+          "perturbed": "Do you like shaking your booty on the dance floor? Visit http://amazon.security-check-589.com/verify",
+          "original_pred": 0,
+          "perturbed_pred": 1
+        },
+        {
+          "original": "Aldrine, rakhesh ex RTM here.pls call.urgent.",
+          "perturbed": "Aldrine, rakhesh ex RTM here.pls call.urgent. Visit http://google.security-check-838.com/verify",
+          "original_pred": 0,
+          "perturbed_pred": 1
+        },
+        {
+          "original": "Yes we are chatting too.",
+          "perturbed": "Yes we are chatting too. Visit http://paypal.security-check-727.com/verify",
+          "original_pred": 0,
+          "perturbed_pred": 1
+        }
+      ]
+    },
+    "urgency_rephrase": {
+      "no_defense": {
+        "accuracy": 0.974,
+        "f1": 0.9685230024213075,
+        "precision": 0.9433962264150944,
+        "recall": 0.9950248756218906,
+        "fpr": 0.04013377926421405
+      },
+      "with_defense": {
+        "accuracy": 0.974,
+        "f1": 0.9685230024213075,
+        "precision": 0.9433962264150944,
+        "recall": 0.9950248756218906,
+        "fpr": 0.04013377926421405
+      },
+      "delta_f1_no_defense": -0.024,
+      "delta_f1_with_defense": -0.024,
+      "delta_fpr_no_defense": 0.0368,
+      "delta_fpr_with_defense": 0.0368,
+      "flipped_predictions": 12,
+      "flipped_after_defense": 12,
+      "examples": [
+        {
+          "original": "The battery is for mr adewale my uncle. Aka Egbon",
+          "perturbed": "The battery is for mr adewale my uncle. Aka Egbon This is extremely urgent - respond NOW!",
+          "original_pred": 0,
+          "perturbed_pred": 1
+        },
+        {
+          "original": "Aldrine, rakhesh ex RTM here.pls call.urgent.",
+          "perturbed": "Aldrine, rakhesh ex RTM here.pls call.urgent. URGENT: Immediate action required!",
+          "original_pred": 0,
+          "perturbed_pred": 1
+        },
+        {
+          "original": "Yes we are chatting too.",
+          "perturbed": "Yes we are chatting too. This is extremely urgent - respond NOW!",
+          "original_pred": 0,
+          "perturbed_pred": 1
+        }
+      ]
+    }
+  }
+}

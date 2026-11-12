@@ -2,13 +2,6 @@
 backend/data/*.csv
 backend/data/*.tsv
 
-# Model artifacts
-backend/models/*.joblib
-backend/models/*.pkl
-
-# Results (generated)
-backend/results/*.json
-
 # Python
 __pycache__/
 *.pyc

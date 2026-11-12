@@ -1,0 +1,43 @@
+{
+  "test_sample_size": 10794,
+  "confidence_intervals_95": {
+    "logistic_regression": {
+      "accuracy": {
+        "value": 0.9877,
+        "ci_95_low": 0.9854,
+        "ci_95_high": 0.9896,
+        "margin_of_error": 0.0021
+      },
+      "fpr": {
+        "value": 0.0111,
+        "ci_95_low": 0.0088,
+        "ci_95_high": 0.014,
+        "margin_of_error": 0.0026
+      }
+    }
+  },
+  "mcnemar_paired_tests": {
+    "lr_vs_naive_bayes": {
+      "contingency_table": {
+        "a_both_correct": 10470,
+        "b_only_A_correct": 191,
+        "c_only_B_correct": 35,
+        "d_both_wrong": 98
+      },
+      "chi2": 106.3053,
+      "p_value": 0.0,
+      "statistically_significant_at_001": true
+    },
+    "lr_vs_distilbert": {
+      "contingency_table": {
+        "a_both_correct": 10609,
+        "b_only_A_correct": 52,
+        "c_only_B_correct": 132,
+        "d_both_wrong": 1
+      },
+      "chi2": 33.9185,
+      "p_value": 5.7470276315640945e-09,
+      "statistically_significant_at_001": true
+    }
+  }
+}

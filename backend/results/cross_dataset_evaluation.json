@@ -1,0 +1,20 @@
+{
+  "external_model_on_benchmark_test": {
+    "test_corpus": "Chakravorty et al. Benchmark (53,970 corpus)",
+    "test_samples": 10794,
+    "accuracy": 0.9163424124513618,
+    "precision": 0.8321638535937796,
+    "recall": 0.9959146618247844,
+    "f1": 0.9067052381444364,
+    "fpr": 0.13854101440200375
+  },
+  "benchmark_model_on_external_test": {
+    "test_corpus": "External Kaggle Phishing Dataset (82,486 corpus)",
+    "test_samples": 16416,
+    "accuracy": 0.8799342105263158,
+    "precision": 0.8375972165370447,
+    "recall": 0.955187303069203,
+    "f1": 0.892535848645112,
+    "fpr": 0.2022428953740283
+  }
+}

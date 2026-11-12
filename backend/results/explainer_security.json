@@ -1,0 +1,15 @@
+{
+  "prompt_injection_benchmark": {
+    "total_samples": 50,
+    "baseline_unprotected_asr_pct": 100.0,
+    "phishguard_protected_asr_pct": 0.0,
+    "defense_efficacy_pct": 100.0
+  },
+  "claim_verification_audit": {
+    "total_claims_audited": 220,
+    "supported_claims": 220,
+    "supported_precision_pct": 100.0,
+    "unsupported_hallucination_pct": 0.0,
+    "unverified_pct": 0.0
+  }
+}

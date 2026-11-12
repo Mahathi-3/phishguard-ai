@@ -1,0 +1,80 @@
+{
+  "model": "LogisticRegression (External dataset, calibrated sigmoid)",
+  "brier_before": 0.0074070420542798705,
+  "brier_after": 0.006890010279360751,
+  "brier_reduction_pct": 6.98,
+  "ece": 0.0014,
+  "reliability": [
+    {
+      "bin_start": 0.0,
+      "bin_end": 0.1,
+      "mean_predicted": 0.002410686184549089,
+      "mean_actual": 0.001962836953677048,
+      "count": 7642
+    },
+    {
+      "bin_start": 0.1,
+      "bin_end": 0.2,
+      "mean_predicted": 0.14811200025084292,
+      "mean_actual": 0.1411764705882353,
+      "count": 85
+    },
+    {
+      "bin_start": 0.2,
+      "bin_end": 0.30000000000000004,
+      "mean_predicted": 0.2404204512937861,
+      "mean_actual": 0.2765957446808511,
+      "count": 47
+    },
+    {
+      "bin_start": 0.30000000000000004,
+      "bin_end": 0.4,
+      "mean_predicted": 0.34752877334818544,
+      "mean_actual": 0.48484848484848486,
+      "count": 33
+    },
+    {
+      "bin_start": 0.4,
+      "bin_end": 0.5,
+      "mean_predicted": 0.4367503983116835,
+      "mean_actual": 0.46153846153846156,
+      "count": 26
+    },
+    {
+      "bin_start": 0.5,
+      "bin_end": 0.6000000000000001,
+      "mean_predicted": 0.5534178084866345,
+      "mean_actual": 0.5,
+      "count": 30
+    },
+    {
+      "bin_start": 0.6000000000000001,
+      "bin_end": 0.7000000000000001,
+      "mean_predicted": 0.6553236207490821,
+      "mean_actual": 0.6052631578947368,
+      "count": 38
+    },
+    {
+      "bin_start": 0.7000000000000001,
+      "bin_end": 0.8,
+      "mean_predicted": 0.7502818313206799,
+      "mean_actual": 0.7936507936507936,
+      "count": 63
+    },
+    {
+      "bin_start": 0.8,
+      "bin_end": 0.9,
+      "mean_predicted": 0.8547034822510343,
+      "mean_actual": 0.8596491228070176,
+      "count": 114
+    },
+    {
+      "bin_start": 0.9,
+      "bin_end": 1.0,
+      "mean_predicted": 0.9967031254905757,
+      "mean_actual": 0.9972415447349484,
+      "count": 8338
+    }
+  ],
+  "note": "Evaluated on 16416 unseen external test samples."
+}
